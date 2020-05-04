@@ -8,7 +8,7 @@
     tools:context=".ThirdActivity">
 
     <TextView
-        android:text="Successfully Logged in."
+        android:text="Complete."
         android:textStyle="bold"
         android:textSize="30sp"
         android:layout_width="wrap_content"
