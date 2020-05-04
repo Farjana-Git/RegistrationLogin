@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RegistrationLogin</string>
+    <string name="switch_to_login"><u>Already have an account? </u></string>
 </resources>

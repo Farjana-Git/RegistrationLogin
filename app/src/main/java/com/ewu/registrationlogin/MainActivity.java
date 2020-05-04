@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText usernameEditText, emailEditText, passwordEditText, confirmPasswordEditText;
     private Button registrationButton;
+    private TextView login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
         passwordEditText = (EditText) findViewById(R.id.passwordId);
         confirmPasswordEditText = (EditText) findViewById(R.id.confirm_passwordId);
         registrationButton = (Button) findViewById(R.id.RegistrationButtonId);
+        login = findViewById(R.id.login);
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                startActivity(intent);
+            }
+        });
 
         registrationButton.setOnClickListener(new View.OnClickListener() {
             @Override
